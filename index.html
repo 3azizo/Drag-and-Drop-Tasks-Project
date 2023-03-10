@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Tasks</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="container">
+        <div class="status" id="not-started">
+          <h1 id="started-txt">Not Started</h1>
+          <div class="tasks"></div>
+          <form class="input-box">
+            <input type="text" placeholder="Task Name" id="inp-task" autocomplete="off"/>
+            <button id="btn-add" "><span>+</span>Add</button>
+          </form>
+        </div>
+        <div class="status" id="in-progress">
+          <h1 id="progres-txt">In Progress</h1>
+          <div class="tasks"></div>
+        </div>
+        <div class="status" id="completed">
+          <h1 id="completed-txt">Completed</h1>
+          <div class="tasks"></div>
+        </div>
+      </div>
+    </div>
+<button class="btn-delete" id="clear" onclick="clearAll()">Clear All</button>
+    <script src="main.js"></script>
+  </body>
+</html>
